@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ejercicio1</string>
+    <string name="mens_error_acceso">No eres usuario del sistema</string>
+    <string name="mens_error_edad">No se cumplen los requisitos de edado1</string>
+    <string name="mens_error_edad_elev">Rango de edad demasiado elevado</string>
+    <string name="mens_access_autorized">Acceso Autorizado, sus hobbies son: </string>
+    <string name="mens_wrong_char">Caracteres inválidos</string>
+</resources>
