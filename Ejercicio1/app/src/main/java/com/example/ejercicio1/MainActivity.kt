@@ -16,5 +16,34 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val programador = Programador()
+        val datos = programador.getProgrammerData()
+
+        Log.d("!:!:!:!", "Nombre: " ${datos.name}, "Edad: " ${datos.age} , "Lenguaje: "${datos.language} )
+    }
+
+    class Programador : ProgrammerInterface {
+
+        private fun getName(): String {
+            return "Manuel"
+        }
+
+        private fun getAge(): Int {
+            return 25
+        }
+
+        private fun getLanguage(): String {
+            return "Java"
+        }
     }
 }
+interface ProgrammerInterface {
+    fun getProgrammerData(): ProgrammerData
+}
+
+data class ProgrammerData (
+    val name: String,
+    val age: Int,
+    val language: String
+)
